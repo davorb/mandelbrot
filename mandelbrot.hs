@@ -7,11 +7,11 @@ z 0 _ = 0
 z k c = (z (k-1) c)*(z (k-1) c) + c
 
 isPartOfSet a = test a 1                
-  where test a k | k > 14 = True
+  where test a k | k > 19 = True
                  | realPart (z k a) > 2  = False
                  | otherwise             = test a (k+1)
 
-init_x = (-2.4)
+init_x = (-2.1)
 init_y = (-1.4)
 step_x = 0.025
 step_y = 0.07
